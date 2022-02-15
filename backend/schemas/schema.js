@@ -7,6 +7,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import category from "./category";
 import link from "./link";
 import post from "./post";
+import postImage from "./postImage";
 import setting from "./setting";
 
 // BLOG SCHEMA
@@ -17,5 +18,5 @@ export default createSchema({
   name: "default",
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([category, link, post, setting]),
+  types: schemaTypes.concat([category, link, post, postImage, setting]),
 });
