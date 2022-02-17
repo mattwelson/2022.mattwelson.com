@@ -8,7 +8,12 @@ export default {
       type: "string",
       name: "title",
     },
-    { title: "Category", name: "category", type: "category" },
+    {
+      title: "Category",
+      name: "category",
+      type: "reference",
+      to: [{ type: "category" }],
+    },
     {
       title: "Body",
       name: "body",
